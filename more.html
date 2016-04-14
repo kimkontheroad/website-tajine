@@ -11,9 +11,9 @@
 
     <title>طاجن - MEHR REZEPTE</title>
 
-	<!-- jQuery -->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -52,10 +52,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                   <li>
+                    <li>
                         <a href="index.html">Home فهرس</a>
                     </li>
-                     <li>
+                    <li>
                         <a href="more.html">mehr rezepte اتصال</a>
                     </li>
                     <li>
@@ -88,18 +88,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Wir haben die Tajine auf unseren Reisen durch Nordafrika entdeckt und waren sofort verzaubert vom unverwechselbaren Geschmack dieses Gerichts!<br>
-					Kurz darauf haben wir uns eine Tajine und die Gewürzmischung auf einem traditionellen Markt in Agadir (Marokko) gekauft und in die Schweiz eingeführt.
-                    Das coole an der Tajine ist, dass sie mit fast allem Gemüse, welches man im Kühlschrank liegen hat aufpimpen kann.</p>
-					<p>In der Schweiz angekommen, haben wir angefangen mit der Rezeptur herumzuspielen und haben so weitere Varianten entworfen, welche wir gerne mit Dir teilen.</p>
-						<p><em>Fülle einfach unser Kontaktformular aus und wähle zwischen den weiteren leckeren Rezepturen aus. Danach werden wir dir deine Auswahl an Rezepten via Mail zukommen lassen.</em>
-					</p><p><strong>Lass es dir schmecken!</strong>
-</p>
-                
-                 
-                    
-                    
-                    
+                <h2 class="post-title">Wir haben die Tajine auf unseren Reisen durch Nordafrika entdeckt und waren sofort verzaubert vom unverwechselbaren Geschmack dieses Gerichts!<br></h2>
+                <p>Kurz darauf haben wir uns eine Tajine und die Gewürzmischung auf einem traditionellen Markt in Agadir (Marokko) gekauft und in die Schweiz eingeführt. Das coole an der Tajine ist, dass sie mit fast allem Gemüse, welches man im Kühlschrank liegen hat aufpimpen kann.</p>
+                <p>In der Schweiz angekommen, haben wir angefangen mit der Rezeptur herumzuspielen und haben so weitere Varianten entworfen, welche wir gerne mit Dir teilen.</p>
+                <p><em>Fülle einfach unser Kontaktformular aus und wähle zwischen den weiteren leckeren Rezepturen aus. Danach werden wir dir deine Auswahl an Rezepten via Mail zukommen lassen.</em>
+                </p>
+                <p><strong>Lass es dir schmecken!</strong>
+                </p>
+
+
+
+
+
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It"s recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -133,14 +133,21 @@
                         </div>
                     </div>
                     <br>
-                    <div class="form-group">
-                    	<label for="vegi">mit spanisches Bohnen (Vegi)</label> 
-                        <input id="vegi" class="rezept" type="checkbox" value="vegi1">  
-                   		<label for="fleisch">mit Dattel-Fleisch</label>
-                        <input id="fleisch" class="rezept" type="checkbox"  value="meat1">
-                        <label for="fleisch">mit Lammkeule</label>
-                        <input id="fleisch" class="rezept" type="checkbox"  value="meat2">
-                   	</div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 controls">
+                            <input id="vegi" class="rezept" type="checkbox" value="vegi1">
+                            <label for="vegi">mit spanisches Bohnen (Vegi)</label>
+                            <br>
+
+                            <input id="fleisch1" class="rezept" type="checkbox" value="fleisch1">
+                            <label for="fleisch1">mit Dattel-Fleisch</label>
+                            <br>
+
+                            <input id="fleisch2" class="rezept" type="checkbox" value="fleisch2">
+                            <label for="fleisch2">mit Lammkeule</label>
+                        </div>
+                    </div>
+
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
@@ -155,7 +162,7 @@
     <hr>
 
     <!-- Footer -->
-      <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -192,7 +199,7 @@
     </footer>
 
 
-    
+
 
 </body>
 
