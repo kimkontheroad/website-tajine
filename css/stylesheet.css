@@ -391,3 +391,17 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+.auswahl {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 800;
+    letter-spacing: 1px;   
+}
+
+#choice_rezept {
+    border-radius: 0px;
+    padding: 25px 35px;
+    border: 1px solid black;
+}
