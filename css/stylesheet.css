@@ -327,12 +327,13 @@ body {
 }
 
 /* Formular Container*/
+    /*'index'-form*/
 #choice_rezept {
     border-radius: 0px;
     padding: 25px 35px;
     border: 1px solid black;
 }
-
+    /*'more'-form*/
 #contactForm {
     border-radius: 0px;
     padding: 25px 35px;
@@ -340,7 +341,7 @@ body {
 }
 /* Formular Container*/
 
-/* input forms*/
+/* input*/
 .auswahl {
     font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     text-transform: uppercase;
@@ -349,4 +350,4 @@ body {
     letter-spacing: 1px;      
     padding: 10px;
 }
-/* input forms*/
+/* input*/
