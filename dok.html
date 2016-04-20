@@ -15,23 +15,32 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <!-- Logo des Tabs Icon -->
+    <link href="img/Logo.png" rel="shortcut icon">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
-	 <!-- jQuery -->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-  
+    <!-- Custom Style-->
+    <script src="js/form_script.js"></script>
+
+    <!-- Prism Plugin -->
+    <script src="js/prism.js"></script>
+    <link href="css/prism.css" rel="stylesheet" />
 
 </head>
 
@@ -54,10 +63,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                   <li>
+                    <li>
                         <a href="index.html">Home فهرس</a>
                     </li>
-                     <li>
+                    <li>
                         <a href="more.html">mehr rezepte اتصال</a>
                     </li>
                     <li>
@@ -85,15 +94,79 @@
         </div>
     </header>
 
-    <!-- Post Content -->
+    <!-- Main Content -->
     <article>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                   
+                    <h2 class="post-title">Wie ist diese Website entstanden?</h2>
+                    <p>Das Grundgerüst der Website ist vom bootstrap-theme '<a src="http://startbootstrap.com/template-overviews/clean-blog/">clean-blog</a>'</p>
+                    <p>Alle nicht benötigten Elemente wurden gelöscht und die Seiten so umgebaut, das Sie unseren Ansprüchen entsprechen..</p>
+
+
+                    <p>Hier ist der HTML-Code für die Rezeptauswahl</p>
+                    <pre>
+                    <code class="language-html">
+               &lt;!--  Formular für Auswahl Rezept--&gt;
+          &lt;div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"&gt;
+              &lt;div class="form-group auswahl"&gt;
+                  &lt;label for="personas"&gt;Anzahl Personen&lt;/label&gt;
+                  &lt;select id="personas" class="form-control"&gt;
+                      &lt;option&gt;2&lt;/option&gt;
+                      &lt;option&gt;4&lt;/option&gt;
+                  &lt;/select&gt;
+              &lt;/div&gt;
+
+             &lt;div class="form-group auswahl"&gt;
+                  &lt;label for="scharf"&gt;Scharf&lt;/label&gt;
+                  &lt;input id="scharf" type="checkbox" name="scharf"&gt;
+              &lt;/div&gt;
+
+             &lt;button id="btn-choice" class="btn btn-default" type="button"&gt;Let's go!&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;!--  Formular für Auswahl Rezept--&gt;
+              
+                    </code>
+                </pre>
+
+                    <p>Und hier das javascript dazu.</p>
+                    <pre>
+                    <code class="language-javascript">$(document).ready(function () {
+    $('#container_4p_mild').hide();
+    $('#container_4p_scharf').hide();
+    $('#container_2p_mild').hide();
+    $('#container_2p_scharf').hide();
+
+    $('#btn-choice').click(function () {
+        var choice = $('#personas').val();
+        if ((choice == 4) &amp;&amp; $('#scharf').is(':checked')) {
+            $('#container_4p_mild').hide();
+            $('#container_2p_mild').hide();
+            $('#container_2p_scharf').hide();
+            $('#container_4p_scharf').slideToggle();
+        } else if (choice == 4) {
+            $('#container_4p_scharf').hide();
+            $('#container_2p_mild').hide();
+            $('#container_2p_scharf').hide();
+            $('#container_4p_mild').slideToggle();
+        } else if ((choice == "2") &amp;&amp; $('#scharf').is(':checked')) {
+            $('#container_4p_mild').hide();
+            $('#container_4p_scharf').hide();
+            $('#container_2p_mild').hide();
+            $('#container_2p_scharf').slideToggle();
+        } else if (choice == "2") {
+            $('#container_4p_mild').hide();
+            $('#container_4p_scharf').hide();
+            $('#container_2p_scharf').hide();
+            $('#container_2p_mild').slideToggle();
+        }
+    });
+});</code>
                     
-                    
+                    </pre>
+
+
+
                 </div>
             </div>
         </div>
@@ -102,7 +175,7 @@
     <hr>
 
     <!-- Footer -->
-      <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -138,7 +211,7 @@
         </div>
     </footer>
 
-   
+
 </body>
 
 </html>
