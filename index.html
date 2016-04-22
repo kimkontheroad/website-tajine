@@ -34,13 +34,21 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
-    
+
     <!-- Custom Style-->
     <script src="js/form_script.js"></script>
-    
+
     <!-- Prism Plugin -->
     <script src="js/prism.js"></script>
     <link href="css/prism.css" rel="stylesheet"/>
+
+    <!-- Select Style/Scripts -->
+    <script src="js/selectFx.js"></script>
+    <script src="js/classie.js"></script>
+    <link href="css/cs-select.css" rel="stylesheet"/>
+    <link href="css/normalize.css" rek="stylesheet"/>
+
+
 
 </head>
 
@@ -117,37 +125,53 @@
                         <br>Kochzeit: zwischen 30-45 Minuten
                     </p>
                     <p>
-                        Beilage: In Marokko wird das Gericht oftmals mit Couscous, Reis oder Fladenbrot serviert, in unserem Rezept servieren wir die Tajine mit einem typisch schweizerischen Krustenkranz.
+                        In Marokko wird das Gericht traditionell mit Couscous, Reis oder Fladenbrot serviert, in unserem Rezept supplementieren wir die Tajine mit einem typisch schweizerischen Krustenkranz.
                         <br><i>(Es gibt natürlich auch Varianten mit Fleisch, mehr dazu findest du unter der Rubrik <a href="more.html">MEHR REZEPTE</a>.)</i>
                     </p>
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <a href="img/Tajine_gif1_static.png">
-                            <img id="imgAnimate" class="img-responsive" src="img/Tajine_gif1_static.png" alt="">
-                        </a>
-                    </div>
                 </div>
+                
+                
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <img id="imgAnimate" class="img-responsive" src="img/Tajine_gif1_static.png" alt="">
+                    </div>
+                
+                
                 <!--  Formular für Auswahl Rezept-->
                 <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="form-group auswahl">
+                        <h2 class="post-title">Wähle dein Rezept</h2>
                         <label for="personas">Anzahl Personen</label>
                         <select id="personas" class="form-control">
                             <option>2</option>
                             <option>4</option>
                         </select>
+
+
+                        <section>
+                            <select class="cs-select cs-skin-border">
+                                <option value="" disabled selected>Anzahl Personen</option>
+                                <option value="2">2 Personen</option>
+                                <option value="4">4 Personen</option>
+                            </select>
+                        </section>
+
                     </div>
 
                     <div class="form-group auswahl">
-                        <label for="scharf">Scharf</label>
+                        <label for="scharf">Scharf mit Chilli?</label>
                         <input id="scharf" type="checkbox" name="scharf">
                     </div>
 
-                    <button id="btn-choice" class="btn btn-default" type="button">Let's go!</button>
-                </div>
-                <!--  Formular für Auswahl Rezept-->
+                    <button id="btn-choice" class="btn btn-default" type="button">Rezept Anzeigen</button>
+                </div>               
+            </div>
+                
+                 <!--  Formular für Auswahl Rezept-->
+                
+                
+            <div class="row">
 
-
-
-                <hr>
                 <!-- Rezept: mild 4 Personen -->
                 <div id="container_4p_mild" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <h2 class="post-title">
@@ -230,6 +254,7 @@
                         <li>2 grosse Zwiebel</li>
                         <li>6 kleine Zwiebeln</li>
                         <li>8 Knoblauchzehen</li>
+                        <li>2 Chili Schote</li>
                         <li>60ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
                         <li>6 Suppenlöffel Tajine-Gewürzmischung
                             <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
