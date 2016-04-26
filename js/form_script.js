@@ -34,19 +34,3 @@ $(document).ready(function () {
         }
     });
 });
-
-
-// startet gif bei hover
-
-            $(document).ready(function()
-        {
-            $("#imgAnimate").hover(
-                function()
-                {
-                    $(this).attr("src", "img/Tajine_gif1_looponce.gif");
-                },
-                function()
-                {
-                    $(this).attr("src", "img/Tajine_gif1_static.png");
-                });
-        });
