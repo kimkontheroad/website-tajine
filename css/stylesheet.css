@@ -352,113 +352,87 @@ body {
 }
 /* input*/
 
-
-/* Select Form Style*/
-
-/* Default custom select styles */
-div.cs-select {
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-	text-align: left;
-	background: #fff;
-	z-index: 100;
-	width: 100%;
-	max-width: 500px;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
 }
 
-div.cs-select:focus {
-	outline: none; /* For better accessibility add a style for this in your skin */
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: black;
+  width: 220px;
+  height: 40px;
+    border: 1px solid #ccc;
+    padding: 15px 25px;
 }
 
-.cs-select select {
-	display: none;
+.select:hover {
+    color: #fff;   
 }
 
-.cs-select span {
-	display: block;
-	position: relative;
-	cursor: pointer;
-	padding: 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #0085a1 transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #0085a1;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #0085a1;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
 }
 
-/* Placeholder and selected option */
-.cs-select > span {
-	padding-right: 3em;
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #0085a1;
 }
-
-.cs-select > span::after,
-.cs-select .cs-selected span::after {
-	speak: none;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #fff;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
-
-.cs-select > span::after {
-	content: '\25BE';
-	right: 1em;
+.select-options li:hover {
+  color: #0085a1;
+  background: #fff;
 }
-
-.cs-select .cs-selected span::after {
-	content: '\2713';
-	margin-left: 1em;
-}
-
-.cs-select.cs-active > span::after {
-	-webkit-transform: translateY(-50%) rotate(180deg);
-	transform: translateY(-50%) rotate(180deg);
-}
-
-div.cs-active {
-	z-index: 200;
-}
-
-/* Options */
-.cs-select .cs-options {
-	position: absolute;
-	overflow: hidden;
-	width: 100%;
-	background: #fff;
-	visibility: hidden;
-}
-
-.cs-select.cs-active .cs-options {
-	visibility: visible;
-}
-
-.cs-select ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.cs-select ul span {
-	padding: 1em;
-}
-
-.cs-select ul li.cs-focus span {
-	background-color: #ddd;
-}
-
-/* Optgroup and optgroup label */
-.cs-select li.cs-optgroup ul {
-	padding-left: 1em;
-}
-
-.cs-select li.cs-optgroup > span {
-	cursor: default;
+.select-options li[rel="hide"] {
+  display: none;
 }
