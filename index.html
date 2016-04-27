@@ -26,26 +26,16 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
+    <!-- Theme Script -->
     <script src="js/script.js"></script>
 
-    <!-- Custom Style-->
-    <script src="js/form_script.js"></script>
-
-    <!-- Prism Plugin -->
-    <script src="js/prism.js"></script>
-    <link href="css/prism.css" rel="stylesheet" type="text/css"/>
-
-    <!-- Select Style/Scripts -->
-    <script src="js/selectFx.js"></script>
-    <script src="js/classie.js"></script>
-    <link href="css/cs-select.css" rel="stylesheet" type="text/css"/>
-    <link href="css/normalize.css" rek="stylesheet" type="text/css"/>
+    <!-- Auswahl Rezept Script -->
+    <script src="js/toggle-rezept.js"></script>
 
 
 </head>
@@ -129,360 +119,352 @@
                 </div>
             </div>
 
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <img src="img/Tajine_gif1_static.png" onclick="this.src ='img/Tajine_gif1_looponce.gif'" />
-                    </div>
-
-                    <!--  Formular für Auswahl Rezept-->
-                    <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
-                        <div class="form-group auswahl">
-                            <h2 class="post-title">Wähle hier dein Rezept</h2>
-                            <hr>
-                            <label for="personas">Anzahl Personen</label>
-                            <select id="personas" class="form-control">
-                                <option>2</option>
-                                <option>4</option>
-                            </select>
-
-
-                            <section>
-                                <select class="cs-select cs-skin-border">
-                                    <option value="" disabled selected>Anzahl Personen</option>
-                                    <option value="2">2 Personen</option>
-                                    <option value="4">4 Personen</option>
-                                </select>
-                            </section>
-
-                        </div>
-
-                        <div class="form-group auswahl">
-                            <label for="scharf">Scharf mit Chilli?</label>
-                            <input id="scharf" type="checkbox" name="scharf">
-                        </div>
-
-                        <button id="btn-choice" class="btn btn-default" type="button">Anzeigen</button>
-                    </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <img src="img/Tajine_gif1_static.png" onclick="this.src ='img/Tajine_gif1_looponce.gif'" />
                 </div>
 
                 <!--  Formular für Auswahl Rezept-->
-
-
-                <div class="row">
-
-                    <!-- Rezept: mild 4 Personen -->
-                    <div id="container_4p_mild" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <h2 class="post-title">
-                          Deine Auswahl: Eine milde Tajine für 4 Personen
-                    </h2>
-                        <h2 class="section-heading">Zutaten</h2>
-                        <ul>
-                            <li>300gr Kartoffel</li>
-                            <li>2 Süsskartoffel</li>
-                            <li>4 Tomaten</li>
-                            <li>1 Paprika</li>
-                            <li>1 Zucchini</li>
-                            <li>3 Karotte</li>
-                            <li>2 grosse Zwiebel</li>
-                            <li>6 kleine Zwiebeln</li>
-                            <li>8 Knoblauchzehen</li>
-                            <li>60ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
-                            <li>6 Suppenlöffel Tajine-Gewürzmischung
-                                <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
-							</em>
-                            </li>
-                            <li>1 Krustenkranz</li>
-                        </ul>
-
-                        <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
-                        <a href="img/post_1.jpg">
-                            <img class="img-responsive" src="img/post_1.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
+                <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
+                    <div class="form-group">
+                        <h2 class="post-title">Wähle hier dein Rezept</h2>
                         <hr>
-                        <h2 class="section-heading">Zubereitung</h2>
-
-                        <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
-                            <br>2. Die grossen Zwiebeln in Scheiben schneiden
-                            <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
-                            <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
-
-                        <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
-                            <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
-                            <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
-
-                        <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
-
-                        <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'"/>
-
-                        <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
-
-                        <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'"/>
-
-                        <p>Den Inhalt 10 Minuten ziehen lassen</p>
-
-                        <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
-
-                        <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'"/>
-
-                        <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
-                            <br>Keine Angst, es wird nichts ankochen ;)</p>
-
-                        <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
-
-                        <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'"/>
-
-                        <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
-
-                        <a href="img/post_2.jpg">
-                            <img class="img-responsive" src="img/post_2.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                        <section>
+                            <label for="personas">Für wieviele Personen hättest du gerne dein Rezept?</label>
+                            <select id="personas" class="auswahl">
+                                <option value="" disabled selected>Anzahl Personen</option>
+                                <option value="2">2 Personen</option>
+                                <option value="4">4 Personen</option>
+                            </select>
+                        
+                        <div>
+                            <label for="scharf">Scharf mit Chilli?</label>
+                            <input id="scharf" type="checkbox" name="scharf">
+                        </div>
+                            </section>
                     </div>
-                    <!-- Rezept: mild 4 Personen -->
-
-
-                    <!-- Rezept: scharf 4 Personen -->
-                    <div id="container_4p_scharf" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <h2 class="post-title">
-                          Deine Auswahl: Eine scharfe Tajine für 4 Personen
-                    </h2>
-                        <h2 class="section-heading">Zutaten</h2>
-                        <ul>
-                            <li>300gr Kartoffel</li>
-                            <li>2 Süsskartoffel</li>
-                            <li>4 Tomaten</li>
-                            <li>1 Paprika</li>
-                            <li>1 Zucchini</li>
-                            <li>3 Karotte</li>
-                            <li>2 grosse Zwiebel</li>
-                            <li>6 kleine Zwiebeln</li>
-                            <li>8 Knoblauchzehen</li>
-                            <li>2 Chili Schote</li>
-                            <li>60ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
-                            <li>6 Suppenlöffel Tajine-Gewürzmischung
-                                <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
-							</em>
-                            </li>
-                            <li>1 Krustenkranz</li>
-                        </ul>
-
-                        <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
-                        <a href="img/post_1.jpg">
-                            <img class="img-responsive" src="img/post_1.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
-                        <hr>
-                        <h2 class="section-heading">Zubereitung</h2>
-
-                        <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
-                            <br>2. Die grossen Zwiebeln in Scheiben schneiden
-                            <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
-                            <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
-
-                        <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
-                            <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
-                            <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
-
-                        <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
-
-                        <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'"/>
-
-                        <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
-
-                        <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'"/>
-
-                        <p>Den Inhalt 10 Minuten ziehen lassen</p>
-
-                        <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
-
-                        <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'"/>
-
-                        <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
-                            <br>Keine Angst, es wird nichts ankochen ;)</p>
-
-                        <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
-
-                        <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'"/>
-
-                        <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
-
-                        <a href="img/post_2.jpg">
-                            <img class="img-responsive" src="img/post_2.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-
-                    </div>
-                    <!-- Rezept: scharf 4 Personen -->
-
-                    <!-- Rezept: mild 2 Personen -->
-                    <div id="container_2p_mild" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <h2 class="post-title">
-                          Deine Auswahl: Eine milde Tajine für 2 Personen
-                    </h2>
-                        <h2 class="section-heading">Zutaten</h2>
-                        <ul>
-                            <li>150gr Kartoffel</li>
-                            <li>2 Süsskartoffel</li>
-                            <li>2 Tomaten</li>
-                            <li>1 Paprika</li>
-                            <li>1 Zucchini</li>
-                            <li>1 Karotte</li>
-                            <li>1 grosse Zwiebel</li>
-                            <li>3 kleine Zwiebeln</li>
-                            <li>4 Knoblauchzehen</li>
-                            <li>1 Chili Schote</li>
-                            <li>40ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
-                            <li>3 Suppenlöffel Tajine-Gewürzmischung
-                                <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
-							</em>
-                            </li>
-                            <li>1 Krustenkranz</li>
-                        </ul>
-
-                        <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
-                        <a href="img/post_1.jpg">
-                            <img class="img-responsive" src="img/post_1.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
-                        <hr>
-                        <h2 class="section-heading">Zubereitung</h2>
-
-                        <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
-                            <br>2. Die grossen Zwiebeln in Scheiben schneiden
-                            <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
-                            <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
-
-                        <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
-                            <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
-                            <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
-
-                        <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
-
-                        <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'"/>
-
-                        <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
-
-                        <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'"/>
-
-                        <p>Den Inhalt 10 Minuten ziehen lassen</p>
-
-                        <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
-
-                        <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'"/>
-
-                        <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
-                            <br>Keine Angst, es wird nichts ankochen ;)</p>
-
-                        <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
-
-                        <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'"/>
-
-                        <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
-
-                        <a href="img/post_2.jpg">
-                            <img class="img-responsive" src="img/post_2.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-
-                    </div>
-                    <!-- Rezept: mild 2 Personen -->
-
-
-                    <!-- Rezept: scharf 2 Personen -->
-                    <div id="container_2p_scharf" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <h2 class="post-title">
-                          Deine Auswahl: Eine scharfe Tajine für 2 Personen
-                    </h2>
-                        <h2 class="section-heading">Zutaten</h2>
-                        <ul>
-                            <li>150gr Kartoffel</li>
-                            <li>2 Süsskartoffel</li>
-                            <li>2 Tomaten</li>
-                            <li>1 Paprika</li>
-                            <li>1 Zucchini</li>
-                            <li>1 Karotte</li>
-                            <li>1 grosse Zwiebel</li>
-                            <li>3 kleine Zwiebeln</li>
-                            <li>4 Knoblauchzehen</li>
-                            <li>1 Chili Schote</li>
-                            <li>40ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
-                            <li>3 Suppenlöffel Tajine-Gewürzmischung
-                                <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
-							</em>
-                            </li>
-                            <li>1 Krustenkranz</li>
-                        </ul>
-
-                        <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
-                        <a href="img/post_1.jpg">
-                            <img class="img-responsive" src="img/post_1.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
-                        <hr>
-                        <h2 class="section-heading">Zubereitung</h2>
-
-                        <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
-                            <br>2. Die grossen Zwiebeln in Scheiben schneiden
-                            <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
-                            <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
-
-                        <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
-                            <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
-                            <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
-
-                        <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
-
-                        <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'"/>
-
-                        <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
-
-                        <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'"/>
-
-                        <p>Den Inhalt 10 Minuten ziehen lassen</p>
-
-                        <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
-
-                        <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'"/>
-
-                        <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
-                            <br>Keine Angst, es wird nichts ankochen ;)</p>
-
-                        <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
-
-                        <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'"/>
-
-                        <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
-
-                        <a href="img/post_2.jpg">
-                            <img class="img-responsive" src="img/post_2.jpg" alt="">
-                        </a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-
-                    </div>
-                    <!-- Rezept: scharf 2 Personen -->
-
-
-                    <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
-                    <div id="quote" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 hidden">
-                        <blockquote>We got to wake up
-                            <br> We got to keep goin'
-                            <br> If they follow us
-                            <br> There's no way of knowin'
-                            <br>
-                            <br> We got a job to do
-                            <br> We got to save mother earth
-                            <br>
-                            <br> - Neil Young -
-                        </blockquote>
-                    </div>
-                    <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
-
+                    <button id="btn-choice" class="btn btn-default" type="button">Anzeigen</button>
                 </div>
             </div>
+
+            <!--  Formular für Auswahl Rezept-->
+
+
+            <div class="row">
+
+                <!-- Rezept: mild 4 Personen -->
+                <div id="container_4p_mild" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="post-title">
+                          Deine Auswahl: Eine milde Tajine für 4 Personen
+                    </h2>
+                    <h2 class="section-heading">Zutaten</h2>
+                    <ul>
+                        <li>300gr Kartoffel</li>
+                        <li>2 Süsskartoffel</li>
+                        <li>4 Tomaten</li>
+                        <li>1 Paprika</li>
+                        <li>1 Zucchini</li>
+                        <li>3 Karotte</li>
+                        <li>2 grosse Zwiebel</li>
+                        <li>6 kleine Zwiebeln</li>
+                        <li>8 Knoblauchzehen</li>
+                        <li>60ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
+                        <li>6 Suppenlöffel Tajine-Gewürzmischung
+                            <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
+							</em>
+                        </li>
+                        <li>1 Krustenkranz</li>
+                    </ul>
+
+                    <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
+                    <a href="img/post_1.jpg">
+                        <img class="img-responsive" src="img/post_1.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
+                    <hr>
+                    <h2 class="section-heading">Zubereitung</h2>
+
+                    <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
+                        <br>2. Die grossen Zwiebeln in Scheiben schneiden
+                        <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
+                        <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
+
+                    <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
+                        <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
+                        <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
+
+                    <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
+
+                    <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'" />
+
+                    <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
+
+                    <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'" />
+
+                    <p>Den Inhalt 10 Minuten ziehen lassen</p>
+
+                    <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
+
+                    <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'" />
+
+                    <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
+                        <br>Keine Angst, es wird nichts ankochen ;)</p>
+
+                    <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
+
+                    <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'" />
+
+                    <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
+
+                    <a href="img/post_2.jpg">
+                        <img class="img-responsive" src="img/post_2.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                </div>
+                <!-- Rezept: mild 4 Personen -->
+
+
+                <!-- Rezept: scharf 4 Personen -->
+                <div id="container_4p_scharf" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="post-title">
+                          Deine Auswahl: Eine scharfe Tajine für 4 Personen
+                    </h2>
+                    <h2 class="section-heading">Zutaten</h2>
+                    <ul>
+                        <li>300gr Kartoffel</li>
+                        <li>2 Süsskartoffel</li>
+                        <li>4 Tomaten</li>
+                        <li>1 Paprika</li>
+                        <li>1 Zucchini</li>
+                        <li>3 Karotte</li>
+                        <li>2 grosse Zwiebel</li>
+                        <li>6 kleine Zwiebeln</li>
+                        <li>8 Knoblauchzehen</li>
+                        <li>2 Chili Schote</li>
+                        <li>60ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
+                        <li>6 Suppenlöffel Tajine-Gewürzmischung
+                            <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
+							</em>
+                        </li>
+                        <li>1 Krustenkranz</li>
+                    </ul>
+
+                    <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
+                    <a href="img/post_1.jpg">
+                        <img class="img-responsive" src="img/post_1.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
+                    <hr>
+                    <h2 class="section-heading">Zubereitung</h2>
+
+                    <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
+                        <br>2. Die grossen Zwiebeln in Scheiben schneiden
+                        <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
+                        <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
+
+                    <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
+                        <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
+                        <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
+
+                    <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
+
+                    <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'" />
+
+                    <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
+
+                    <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'" />
+
+                    <p>Den Inhalt 10 Minuten ziehen lassen</p>
+
+                    <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
+
+                    <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'" />
+
+                    <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
+                        <br>Keine Angst, es wird nichts ankochen ;)</p>
+
+                    <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
+
+                    <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'" />
+
+                    <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
+
+                    <a href="img/post_2.jpg">
+                        <img class="img-responsive" src="img/post_2.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+
+                </div>
+                <!-- Rezept: scharf 4 Personen -->
+
+                <!-- Rezept: mild 2 Personen -->
+                <div id="container_2p_mild" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="post-title">
+                          Deine Auswahl: Eine milde Tajine für 2 Personen
+                    </h2>
+                    <h2 class="section-heading">Zutaten</h2>
+                    <ul>
+                        <li>150gr Kartoffel</li>
+                        <li>2 Süsskartoffel</li>
+                        <li>2 Tomaten</li>
+                        <li>1 Paprika</li>
+                        <li>1 Zucchini</li>
+                        <li>1 Karotte</li>
+                        <li>1 grosse Zwiebel</li>
+                        <li>3 kleine Zwiebeln</li>
+                        <li>4 Knoblauchzehen</li>
+                        <li>1 Chili Schote</li>
+                        <li>40ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
+                        <li>3 Suppenlöffel Tajine-Gewürzmischung
+                            <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
+							</em>
+                        </li>
+                        <li>1 Krustenkranz</li>
+                    </ul>
+
+                    <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
+                    <a href="img/post_1.jpg">
+                        <img class="img-responsive" src="img/post_1.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
+                    <hr>
+                    <h2 class="section-heading">Zubereitung</h2>
+
+                    <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
+                        <br>2. Die grossen Zwiebeln in Scheiben schneiden
+                        <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
+                        <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
+
+                    <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
+                        <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
+                        <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
+
+                    <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
+
+                    <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'" />
+
+                    <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
+
+                    <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'" />
+
+                    <p>Den Inhalt 10 Minuten ziehen lassen</p>
+
+                    <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
+
+                    <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'" />
+
+                    <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
+                        <br>Keine Angst, es wird nichts ankochen ;)</p>
+
+                    <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
+
+                    <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'" />
+
+                    <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
+
+                    <a href="img/post_2.jpg">
+                        <img class="img-responsive" src="img/post_2.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+
+                </div>
+                <!-- Rezept: mild 2 Personen -->
+
+
+                <!-- Rezept: scharf 2 Personen -->
+                <div id="container_2p_scharf" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="post-title">
+                          Deine Auswahl: Eine scharfe Tajine für 2 Personen
+                    </h2>
+                    <h2 class="section-heading">Zutaten</h2>
+                    <ul>
+                        <li>150gr Kartoffel</li>
+                        <li>2 Süsskartoffel</li>
+                        <li>2 Tomaten</li>
+                        <li>1 Paprika</li>
+                        <li>1 Zucchini</li>
+                        <li>1 Karotte</li>
+                        <li>1 grosse Zwiebel</li>
+                        <li>3 kleine Zwiebeln</li>
+                        <li>4 Knoblauchzehen</li>
+                        <li>1 Chili Schote</li>
+                        <li>40ml Arganöl <em>(alternativ Oliven- oder Sonnenblumenöl)</em></li>
+                        <li>3 Suppenlöffel Tajine-Gewürzmischung
+                            <br><em>(das Tajine Gewürz besteht aus Cayenne-Pfeffer, Kurkuma, Koriander, Kumin, Schwarzkümmel, Pfeffer, Bockshornkleesaat, Paprika, Piment, Senfsaat, Chili, Ingwer, Fenchel, Knoblauch und Kardamom und verleiht dem Gericht einen würzig, erdigen und fruchtigen Geschmack)
+							</em>
+                        </li>
+                        <li>1 Krustenkranz</li>
+                    </ul>
+
+                    <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
+                    <a href="img/post_1.jpg">
+                        <img class="img-responsive" src="img/post_1.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
+                    <hr>
+                    <h2 class="section-heading">Zubereitung</h2>
+
+                    <p>1. Kartoffel und Süsskartoffel rüsten und in Würfel schneiden
+                        <br>2. Die grossen Zwiebeln in Scheiben schneiden
+                        <br>3. Die kleinen Zwiebeln nur rüsten, ohne sie zu verkleinern
+                        <br>4. Kartoffeln, Süsskartoffeln, alle Zwiebeln und die Knoblauchzehen in die Tajine geben</p>
+
+                    <p>5. Die Hälfte des Arganöls und die Tajine Gewürzmischung in die Tajine geben und den Inhalt gut durchmischen
+                        <br>6. Das restliche Gemüse rüsten und in Scheiben/Würfel schneiden
+                        <br> 7. Vorbereitetes Gemüse in einen separaten Behälter füllen und mit dem Rest des Arganöls und der Gewürzmischung vermischen</p>
+
+                    <p>Den Deckel auf die Tajine legen und mit dem Inhalt bei mittlerer Hitze andünsten</p>
+
+                    <img src="img/Tajine_gif2_static.png" onclick="this.src ='img/Tajine_gif2_looponce.gif'" />
+
+                    <p>Nach rund 5 Minuten mit 1.5dl Wasser ablöschen</p>
+
+                    <img src="img/Tajine_gif3_static.png" onclick="this.src ='img/Tajine_gif3_looponce.gif'" />
+
+                    <p>Den Inhalt 10 Minuten ziehen lassen</p>
+
+                    <p>Das restliche Gemüse beigeben und weitere 15 bis 30 Minuten bei mittlerer Hitze garen lassen</p>
+
+                    <img src="img/Tajine_gif4_static.png" onclick="this.src ='img/Tajine_gif4_looponce.gif'" />
+
+                    <p><strong>Wichtiger Hinweis:</strong> Lasse den Deckel während der gesamten Kochzeit auf der Tajine. Sonst verflüchtig sich der Wasserdampf, der für den Garprozess benötigt wird.
+                        <br>Keine Angst, es wird nichts ankochen ;)</p>
+
+                    <p>Fertig ist der Gaumenschmaus. Kombiniert mit dem Krustenkranz wird das Gericht zu einem unverwechselbaren Geschmackserlebnis!</p>
+
+                    <img src="img/Tajine_gif5_static.png" onclick="this.src ='img/Tajine_gif5_looponce.gif'" />
+
+                    <h2 class="section-heading">Wir wünschen einen guten Appetit</h2>
+
+                    <a href="img/post_2.jpg">
+                        <img class="img-responsive" src="img/post_2.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+
+                </div>
+                <!-- Rezept: scharf 2 Personen -->
+
+
+                <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
+                <div id="quote" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 hidden">
+                    <blockquote>We got to wake up
+                        <br> We got to keep goin'
+                        <br> If they follow us
+                        <br> There's no way of knowin'
+                        <br>
+                        <br> We got a job to do
+                        <br> We got to save mother earth
+                        <br>
+                        <br> - Neil Young -
+                    </blockquote>
+                </div>
+                <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
+
+            </div>
+        </div>
     </article>
     <hr>
 
@@ -494,30 +476,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
-                        <a href="https://instagram.com/kimkontheroad" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/kimkontheroad" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/kimko.tarovsky" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://github.com/kimkontheroad/website-tajine" target="_blank">
                             <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -527,7 +485,7 @@
                     </li>
 
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; HTW Chur 2016</p>
+                <p class="copyright text-muted">Copyright &copy; Fabio Follador, Kim Schläpfer und Toneatti</p>
             </div>
         </div>
     </div>
