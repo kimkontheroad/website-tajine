@@ -31,11 +31,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Theme Script -->
+    <!-- CleanBlog Theme Script -->
     <script src="js/script.js"></script>
 
     <!-- Auswahl Rezept Script -->
     <script src="js/toggle-rezept.js"></script>
+
+    <!-- Lightbox -->
+    <script src="js/lightbox.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -130,18 +134,21 @@
                         <h2 class="post-title">Wähle hier dein Rezept</h2>
                         <hr>
                         <section>
+                            
                             <label for="personas">Für wieviele Personen hättest du gerne dein Rezept?</label>
                             <select id="personas" class="auswahl select">
                                 <option value="" disabled selected>Anzahl Personen</option>
                                 <option value="2">2 Personen</option>
                                 <option value="4">4 Personen</option>
                             </select>
-                        
-                        <div>
-                            <label for="scharf">Scharf mit Chilli?</label>
-                            <input id="scharf" type="checkbox" name="scharf">
-                        </div>
-                            </section>
+                            
+                            <label for="scharfmild">Scharf mit Chilli?</label>
+                            <select id="scharfmild" class="auswahl select">
+                                <option value="scharf">Scharf</option>
+                                <option value="">Mild</option>
+                            </select>
+
+                        </section>
                     </div>
                     <button id="btn-choice" class="btn btn-default" type="button">Anzeigen</button>
                 </div>
@@ -177,9 +184,13 @@
                     </ul>
 
                     <p>Gewürzmischung und Arganöl gibt’s hier: <a href="http://www.kreativmus.ch/home.html" target="_blank">kreativmus.ch</a></p>
-                    <a href="img/post_1.jpg">
-                        <img class="img-responsive" src="img/post_1.jpg" alt="">
+
+
+                    <a href="img/post_1.jpg" data-lightbox="image-1" data-title="Gerüstetes Gemüse in allen bunten Farben">
+                        <img class="img-responsive" src="img/post_1.jpg">
                     </a>
+
+
                     <span class="caption text-muted">Diese Tajine ist nicht nur Vegetarisch sondern sogar Vegan!</span>
                     <hr>
                     <h2 class="section-heading">Zubereitung</h2>
