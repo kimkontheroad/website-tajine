@@ -28,7 +28,7 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!-- Bootstrap Core Script -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- CleanBlog Theme Script -->
@@ -38,8 +38,9 @@
     <script src="js/toggle-rezept.js"></script>
 
     <!-- Lightbox -->
-    <script src="js/lightbox.js"></script>
     <link href="css/lightbox.css" rel="stylesheet" type="text/css">
+    <script src="js/lightbox.js"></script>
+
 
 
 </head>
@@ -127,25 +128,24 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <img src="img/Tajine_gif1_static.png" onclick="this.src ='img/Tajine_gif1_looponce.gif'" />
                 </div>
-
+                
                 <!--  Formular für Auswahl Rezept-->
                 <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
                     <div class="form-group">
-                        <h2 class="post-title">Wähle hier dein Rezept</h2>
-                        <hr>
+                        <h2 class="post-title">Rezept</h2>
                         <section>
-                            
-                            <label for="personas">Für wieviele Personen hättest du gerne dein Rezept?</label>
+                            <p>Darf es für ein Tête-à-Tête sein oder für ein Quartett?<br>Magst du Chilischoten?</p>
                             <select id="personas" class="auswahl select">
-                                <option value="" disabled selected>Anzahl Personen</option>
+                                <option value="hide">Anzahl Personen</option>
                                 <option value="2">2 Personen</option>
                                 <option value="4">4 Personen</option>
                             </select>
                             
-                            <label for="scharfmild">Scharf mit Chilli?</label>
+                            
                             <select id="scharfmild" class="auswahl select">
-                                <option value="scharf">Scharf</option>
-                                <option value="">Mild</option>
+                                <option value="hide">Schärfe</option>
+                                <option value="mild">mild</option>
+                                <option value="scharf">scharf</option>
                             </select>
 
                         </section>
@@ -230,7 +230,7 @@
                     <a href="img/post_2.jpg">
                         <img class="img-responsive" src="img/post_2.jpg" alt="">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    <span class="caption text-muted">So hat der Gaumen freude!</span>
                 </div>
                 <!-- Rezept: mild 4 Personen -->
 
@@ -303,7 +303,7 @@
                     <a href="img/post_2.jpg">
                         <img class="img-responsive" src="img/post_2.jpg" alt="">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    <span class="caption text-muted">So hat der Gaumen freude!</span>
 
 
                 </div>
@@ -377,7 +377,7 @@
                     <a href="img/post_2.jpg">
                         <img class="img-responsive" src="img/post_2.jpg" alt="">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    <span class="caption text-muted">So hat der Gaumen freude!</span>
 
 
                 </div>
@@ -452,29 +452,13 @@
                     <a href="img/post_2.jpg">
                         <img class="img-responsive" src="img/post_2.jpg" alt="">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-
+                    <span class="caption text-muted">So hat der Gaumen freude!</span>
                 </div>
                 <!-- Rezept: scharf 2 Personen -->
 
 
-                <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
-                <div id="quote" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 hidden">
-                    <blockquote>We got to wake up
-                        <br> We got to keep goin'
-                        <br> If they follow us
-                        <br> There's no way of knowin'
-                        <br>
-                        <br> We got a job to do
-                        <br> We got to save mother earth
-                        <br>
-                        <br> - Neil Young -
-                    </blockquote>
-                </div>
-                <!-- Zitatvorlage falls wir das noch brauchen, ansonsten delete! -->
-
             </div>
+            
         </div>
     </article>
     <hr>
@@ -494,7 +478,9 @@
                                 </span>
                         </a>
                     </li>
-
+                    <li id="top-btn">
+                    <a class="btn btn-default" type="button" href="#">zum anfang</a>
+                    </li>
                 </ul>
                 <p class="copyright text-muted">Copyright &copy; Fabio Follador, Kim Schläpfer und Toneatti</p>
             </div>

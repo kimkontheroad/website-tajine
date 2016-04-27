@@ -1,9 +1,5 @@
-// js für hide & show der Artikel
-//*
-
-
-
 $(document).ready(function () {
+    /* js für hide & show der Artikel*/
     $('#container_4p_mild').hide();
     $('#container_4p_scharf').hide();
     $('#container_2p_mild').hide();
@@ -34,11 +30,12 @@ $(document).ready(function () {
             $('#container_2p_mild').slideToggle();
         }
     });
+    /* js für hide & show der Artikel*/
 
-    /*
-Reference: http://jsfiddle.net/BB3JK/47/
-*/
 
+    /*Script für select  
+        Reference: http://jsfiddle.net/BB3JK/47/
+                                                    */
     $('select').each(function () {
         var $this = $(this),
             numberOfOptions = $(this).children('option').length;
@@ -83,7 +80,19 @@ Reference: http://jsfiddle.net/BB3JK/47/
             $styledSelect.removeClass('active');
             $list.hide();
         });
-
     });
+    /*Script für select  
+    Reference: http://jsfiddle.net/BB3JK/47/
+                                                */
+/* script für to-the-top-button */
+    var amountScrolled = 2000;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('#top-btn').fadeIn();
+        } else {
+            $('#top-btn').fadeOut();
+        }
+    });
+/* script für to-the-top-button */
 
 });
