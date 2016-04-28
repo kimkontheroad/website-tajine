@@ -84,7 +84,12 @@ $(document).ready(function () {
 
     /*Script für select  
     Reference: http://jsfiddle.net/BB3JK/47/
-    */
+    
+        /* TOOLTIP */
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    /* TOOLTIP */
 
     /* script für to-the-top-button */
     var amountScrolled = 2000;
