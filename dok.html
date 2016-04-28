@@ -92,32 +92,34 @@
                     <p>Hier ist der HTML-Code für die Rezeptauswahl</p>
                     <pre>
                     <code class="language-html">
-               &lt;!--  Formular für Auswahl Rezept--&gt;
-          &lt;div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"&gt;
-              &lt;div class="form-group auswahl"&gt;
-                  &lt;label for="personas"&gt;Anzahl Personen&lt;/label&gt;
-                  &lt;select id="personas" class="form-control"&gt;
-                      &lt;option&gt;2&lt;/option&gt;
-                      &lt;option&gt;4&lt;/option&gt;
-                  &lt;/select&gt;
-              &lt;/div&gt;
-
-             &lt;div class="form-group auswahl"&gt;
-                  &lt;label for="scharf"&gt;Scharf&lt;/label&gt;
-                  &lt;input id="scharf" type="checkbox" name="scharf"&gt;
-              &lt;/div&gt;
-
-             &lt;button id="btn-choice" class="btn btn-default" type="button"&gt;Let's go!&lt;/button&gt;
-          &lt;/div&gt;
-          &lt;!--  Formular für Auswahl Rezept--&gt;
-              
+            &lt;!--  Formular für Auswahl Rezept--&gt;
+            &lt;div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;h2 class="post-title"&gt;Rezept&lt;/h2&gt;
+                        &lt;section&gt;
+                        &lt;p&gt;Darf es für ein Tête-à-Tête sein oder für ein Quartett?
+                            &lt;br&gt;Magst du Chilischoten?&lt;/p&gt;
+                        &lt;select id="personas" class="auswahl select"&gt;
+                            &lt;option value="hide"&gt;Anzahl Personen&lt;/option&gt;
+                            &lt;option value="2"&gt;2 Personen&lt;/option&gt;
+                            &lt;option value="4"&gt;4 Personen&lt;/option&gt;
+                        &lt;/select&gt;
+                        &lt;select id="scharfmild" class="auswahl select"&gt;
+                            &lt;option value="hide"&gt;Schärfe&lt;/option&gt;
+                            &lt;option value="mild"&gt;mild&lt;/option&gt;
+                            &lt;option value="scharf"&gt;scharf&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;button id="btn-choice" class="btn btn-default" type="button"&gt;Anzeigen&lt;/button&gt;
+                 &lt;/div&gt;
                     </code>
                 </pre>
 
                     <p>Und hier das javascript dazu.</p>
                     <pre>
                     <code class="language-javascript">
-                    $(document).ready(function () {
+    /* js für hide &amp; show der Artikel*/
     $('#container_4p_mild').hide();
     $('#container_4p_scharf').hide();
     $('#container_2p_mild').hide();
@@ -125,29 +127,30 @@
 
     $('#btn-choice').click(function () {
         var choice = $('#personas').val();
-        if ((choice == 4) &amp;&amp; $('#scharf').is(':checked')) {
+        var choice1 = $('#scharfmild').val();
+        if ((choice == 4) &amp;&amp; (choice1 == "scharf")) {
             $('#container_4p_mild').hide();
             $('#container_2p_mild').hide();
             $('#container_2p_scharf').hide();
             $('#container_4p_scharf').slideToggle();
-        } else if (choice == 4) {
+        } else if ((choice == 4) &amp;&amp; (choice1 == "mild")) {
             $('#container_4p_scharf').hide();
             $('#container_2p_mild').hide();
             $('#container_2p_scharf').hide();
             $('#container_4p_mild').slideToggle();
-        } else if ((choice == "2") &amp;&amp; $('#scharf').is(':checked')) {
+        } else if ((choice == "2") &amp;&amp; (choice1 == "scharf")) {
             $('#container_4p_mild').hide();
             $('#container_4p_scharf').hide();
             $('#container_2p_mild').hide();
             $('#container_2p_scharf').slideToggle();
-        } else if (choice == "2") {
+        } else if ((choice == "2") &amp;&amp; (choice1 == "mild")) {
             $('#container_4p_mild').hide();
             $('#container_4p_scharf').hide();
             $('#container_2p_scharf').hide();
             $('#container_2p_mild').slideToggle();
         }
     });
-});</code>
+                        </code>
                     
                     </pre>
 
@@ -196,13 +199,13 @@
     <script src="js/lightbox.js"></script>
 
     <!-- CleanBlog Theme Script -->
-    <script src="js/script.js"></script>
+    <script src="js/theme_script.js"></script>
     
     <!-- Prism Plugin -->
     <script src="js/prism.js"></script>
 
     <!-- Auswahl Rezept Script -->
-    <script src="js/toggle-rezept.js"></script>
+    <script src="js/custom_script.js"></script>
 
     <!-- SCRIPTS -->
 
