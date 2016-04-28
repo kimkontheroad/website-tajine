@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 
     <meta charset="utf-8">
@@ -81,6 +82,7 @@
 
     <article>
         <div class="container">
+            <!-- Einleitung -->
             <div class="row">
                 <div id="intro" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <h2 class="post-title">
@@ -98,38 +100,38 @@
                         <br><i>(Es gibt natürlich auch Varianten mit Fleisch, mehr dazu findest du unter der Rubrik <a href="more.html">MEHR REZEPTE</a>.)</i>
                     </p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div id="img1" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <img src="img/Tajine_gif1_static.jpg" onclick="this.src ='img/Tajine_gif1_looponce.gif'" />
                 </div>
+                <hr>
+                    <!-- Einleitung -->
+                    
+                    <!--  Formular für Auswahl Rezept-->
+                    <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
+                        <div class="form-group">
+                            <h2 class="post-title">Rezept</h2>
+                            <section>
+                                <p>Darf es für ein Tête-à-Tête sein oder für ein Quartett?
+                                    <br>Magst du Chilischoten?</p>
+                                <select id="personas" class="auswahl select">
+                                    <option value="hide">Anzahl Personen</option>
+                                    <option value="2">2 Personen</option>
+                                    <option value="4">4 Personen</option>
+                                </select>
 
-                <!--  Formular für Auswahl Rezept-->
-                <div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
-                    <div class="form-group">
-                        <h2 class="post-title">Rezept</h2>
-                        <section>
-                            <p>Darf es für ein Tête-à-Tête sein oder für ein Quartett?
-                                <br>Magst du Chilischoten?</p>
-                            <select id="personas" class="auswahl select">
-                                <option value="hide">Anzahl Personen</option>
-                                <option value="2">2 Personen</option>
-                                <option value="4">4 Personen</option>
-                            </select>
 
+                                <select id="scharfmild" class="auswahl select">
+                                    <option value="hide">Schärfe</option>
+                                    <option value="mild">mild</option>
+                                    <option value="scharf">scharf</option>
+                                </select>
 
-                            <select id="scharfmild" class="auswahl select">
-                                <option value="hide">Schärfe</option>
-                                <option value="mild">mild</option>
-                                <option value="scharf">scharf</option>
-                            </select>
-
-                        </section>
+                            </section>
+                        </div>
+                        <button id="btn-choice" class="btn btn-default" type="button">Anzeigen</button>
                     </div>
-                    <button id="btn-choice" class="btn btn-default" type="button">Anzeigen</button>
                 </div>
-            </div>
+            
             <!--  Formular für Auswahl Rezept-->
 
             <div class="row">
@@ -443,14 +445,6 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://github.com/kimkontheroad/website-tajine" target="_blank">
-                                <span class="fa-stack fa-xs">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
                         <li id="top-btn">
                             <a class="btn btn-default" type="button" href="#">zum anfang</a>
                         </li>
