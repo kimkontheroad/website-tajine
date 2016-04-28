@@ -81,10 +81,12 @@ $(document).ready(function () {
             $list.hide();
         });
     });
+
     /*Script für select  
     Reference: http://jsfiddle.net/BB3JK/47/
-                                                */
-/* script für to-the-top-button */
+    */
+
+    /* script für to-the-top-button */
     var amountScrolled = 2000;
     $(window).scroll(function () {
         if ($(window).scrollTop() > amountScrolled) {
@@ -93,11 +95,9 @@ $(document).ready(function () {
             $('#top-btn').fadeOut();
         }
     });
-/* script für to-the-top-button */
 
-    /* TOOLTIP */
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-   /* TOOLTIP */ 
+    /* script für to-the-top-button */
+
+    $('a[data-lightbox="a"]').imageLightbox();
+
 });

@@ -17,6 +17,11 @@ p a {
     text-decoration: underline;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 h1,
 h2,
 h3,
@@ -521,8 +526,13 @@ body {
     
 }
 
-footer {
-    margin-top: 80px;
-    padding-bottom: 40px;
-    background-color: #ccc;
+
+/* lightbox */
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
 }
