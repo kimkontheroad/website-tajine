@@ -1030,8 +1030,4 @@ jQuery(document).ready(function($) {
 });
 
 
-//* Toggle Article on/off
-
-
-
 

@@ -95,4 +95,9 @@ $(document).ready(function () {
     });
 /* script für to-the-top-button */
 
+    /* TOOLTIP */
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+   /* TOOLTIP */ 
 });

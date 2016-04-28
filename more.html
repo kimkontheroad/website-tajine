@@ -32,6 +32,9 @@
 
     <!-- Theme Script -->
     <script src="js/script.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="js/toggle-rezept.js"></script>
 
 
     
@@ -104,35 +107,34 @@
 
 
 
-                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It"s recommended that you use a private domain email address! -->
-                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                <form name="sentMessage" id="contactForm" novalidate>
+                <!-- Kontak Formular -->
+                
+                <form name="sentMessage" id="contactForm" method="POST" action="http://mmp.mediologie.ch/im2/forms/ausgabe.php" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name / Vorname </label>
-                            <input type="text" class="form-control" placeholder="Name / Vorname" id="name" required data-validation-required-message="Bitte sag uns doch deinen Namen.">
+                            <input type="text" class="form-control" placeholder="Name / Vorname" id="name" required data-validation-required-message="Bitte sag uns doch deinen Namen." data-toggle="tooltip" data-placement="left" title="Müller / Hans">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Ohne deine Email Adresse können wir dir das Rezept nicht zustellen.">
+                            <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Ohne deine Email Adresse können wir dir das Rezept nicht zustellen!" data-toggle="tooltip" data-placement="left" title="example@gmail.com">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Telefon - <em>Falls beim Email Versand etwas schief laufen sollte, werden wir dir das Rezept als Nachricht auf den Mobiltelefon zukommen lassen.</em></label>
-                            <input type="tel" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="Falls beim Email Versand etwas schief laufen sollte, werden wir dir das Rezept als Nachricht auf den Mobiltelefon zukommen lassen.">
+                            <label>Telefon</label>
+                            <input type="tel" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="" data-toggle="tooltip" data-placement="left" title="Falls beim Email Versand etwas schief laufen sollte, werden wir dir das Rezept als Nachricht auf den Mobiltelefon zukommen lassen.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Nachricht</label>
-                            <textarea rows="5" class="form-control" placeholder="Teile uns einen Rezeptwunsch mit, oder lass uns wissen wie dir die Website gefällt!" id="message" required data-validation-required-message="Teile uns einen Rezeptwunsch mit, oder lass uns wissen wie dir die Website gefällt!"></textarea>
+                            <textarea rows="5" class="form-control" placeholder="Nachricht" id="message" required data-validation-required-message="Gib doch bitte eine Nachricht ein!" data-toggle="tooltip" data-placement="left" title="Teile uns einen Rezeptwunsch mit, oder lass uns wissen wie dir unsere Website gefällt!"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -173,7 +175,7 @@
                 <ul class="list-inline text-center">
                     <li>
                         <a href="https://github.com/kimkontheroad/website-tajine" target="_blank">
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-xs">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                 </span>

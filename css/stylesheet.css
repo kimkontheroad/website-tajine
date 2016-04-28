@@ -520,3 +520,9 @@ body {
     position: fixed;
     
 }
+
+footer {
+    margin-top: 80px;
+    padding-bottom: 40px;
+    background-color: #ccc;
+}
