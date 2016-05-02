@@ -150,14 +150,11 @@
             $('#container_2p_mild').slideToggle();
         }
     });
-                        </code>
-                    
+                    </code>
                     </pre>
                     
                     <h2 class="post-title">Fotos und GIF's</h2>
-                    <p>
-                    Die Fotos wurden responsive mit Bootstrap und mit HTML eingebaut:
-                    </p>         
+                    <p>Die Fotos wurden responsive mit Bootstrap und mit HTML eingebaut:</p>         
                     <pre>
                     <code class="language-html">
     &lt;a href="img/post_1.jpg" data-lightbox="a"&gt;
@@ -192,8 +189,8 @@
                     
                     <h2 class="post-title">Styling</h2>
                     <p>Sobald die Grundfunktionen für die Website standen, ging es an das Styling. Das Theme 'clean-blog' gab schon viel vor, das 'select' und die 'checkboxen' zum Beispiel waren nicht dabei, also wurden diese mithilfe von '<a href="http://codepen.io/">codepen</a>'-styles an das Theme angepasst:</p>
+                    <!-- Codepen Embedded -->
                     <p data-height="266" data-theme-id="dark" data-slug-hash="ctsCz" data-default-tab="css,result" data-user="wallaceerick" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/wallaceerick/pen/ctsCz/">Custom Select Menu</a> by Wallace Erick (<a href="http://codepen.io/wallaceerick">@wallaceerick</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-                    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                     <p data-height="266" data-theme-id="dark" data-slug-hash="BiHzp" data-default-tab="css,result" data-user="CreativeJuiz" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/CreativeJuiz/pen/BiHzp/">Custom checkboxes with CSS only</a> by Geoffrey Crofte (<a href="http://codepen.io/CreativeJuiz">@CreativeJuiz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                     <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                     
@@ -210,7 +207,8 @@ $(window).scroll(function () {
     $('#top-btn').fadeOut();
     }
 });
-                    </code></pre>
+                    </code>
+                    </pre>
                     
                     <h2 class="post-title">Plugins</h2>
                     <p>Wir haben das '<a href="http://osvaldas.info/image-lightbox-responsive-touch-friendly" target="_blank">lightbox</a>'-Plugin verwendet. Leider funktioniert das nicht mit dem &lt;picture&gt;-tag</p>
@@ -221,6 +219,18 @@ $(window).scroll(function () {
                     </code>
                     </pre>
                     <p>Um den Code in der Dokumentation übersichtlich darzustellen verwendeten wir das '<a href="http://prismjs.com/">prism</a>'-plugin</p>
+                    <p>Plus für das Kontaktformular sind noch die 'tooltips' aktiviert:</p>
+                    <pre>
+                    <code class="language-javascript">
+        /* TOOLTIP */
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+                    </code>
+                    </pre>
+                    
+                    <h2 class="post-title">Probleme</h2>
+                    <p>Die Website ist ohne grössere Probleme entstanden, jedoch würden wir bei einem nächsten Mal nicht unbedingt mit einem Theme starten. Dies führte nämlich dazu, das man sich am Anfang in einen grösseren Quellcode lesen musste und viele Zeilen Code die man nicht braucht, löschen musstes..</p>
                     
                 </div>
             </div>
