@@ -86,35 +86,35 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <h2 class="post-title">Wie ist diese Website entstanden?</h2>
                     <p>Das Grundgerüst der Website ist vom bootstrap-theme '<a href="http://startbootstrap.com/template-overviews/clean-blog/" target="_blank">clean-blog</a>'</p>
-                    <p>Alle nicht benötigten Elemente wurden gelöscht und die Seiten so umgebaut, das Sie unseren Ansprüchen entsprechen..</p>
+                    <p>Alle nicht benötigten Elemente wurden gelöscht und die Seiten so umgebaut, das sie unseren Ansprüchen entspricht.</p>
 
-
+                    <h2 class="post-title">Grundfunktionen</h2>
                     <p>Hier ist der HTML-Code für die Rezeptauswahl</p>
                     <pre>
                     <code class="language-html">
-            &lt;!--  Formular für Auswahl Rezept--&gt;
-            &lt;div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1"&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;h2 class="post-title"&gt;Rezept&lt;/h2&gt;
-                        &lt;section&gt;
-                        &lt;p&gt;Darf es für ein Tête-à-Tête sein oder für ein Quartett?
-                            &lt;br&gt;Magst du Chilischoten?&lt;/p&gt;
-                        &lt;select id="personas" class="auswahl select"&gt;
-                            &lt;option value="hide"&gt;Anzahl Personen&lt;/option&gt;
-                            &lt;option value="2"&gt;2 Personen&lt;/option&gt;
-                            &lt;option value="4"&gt;4 Personen&lt;/option&gt;
-                        &lt;/select&gt;
-                        &lt;select id="scharfmild" class="auswahl select"&gt;
-                            &lt;option value="hide"&gt;Schärfe&lt;/option&gt;
-                            &lt;option value="mild"&gt;mild&lt;/option&gt;
-                            &lt;option value="scharf"&gt;scharf&lt;/option&gt;
-                        &lt;/select&gt;
-                    &lt;/section&gt;
-                &lt;/div&gt;
-                &lt;button id="btn-choice" class="btn btn-default" type="button"&gt;Anzeigen&lt;/button&gt;
-                 &lt;/div&gt;
+ &lt;!--  Formular für Auswahl Rezept--&gt;
+ &lt;div id="choice_rezept" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1"&gt;
+     &lt;div class="form-group"&gt;
+         &lt;h2 class="post-title"&gt;Rezept&lt;/h2&gt;
+             &lt;section&gt;
+             &lt;p&gt;Darf es für ein Tête-à-Tête sein oder für ein Quartett?
+                 &lt;br&gt;Magst du Chilischoten?&lt;/p&gt;
+             &lt;select id="personas" class="auswahl select"&gt;
+                 &lt;option value="hide"&gt;Anzahl Personen&lt;/option&gt;
+                 &lt;option value="2"&gt;2 Personen&lt;/option&gt;
+                 &lt;option value="4"&gt;4 Personen&lt;/option&gt;
+             &lt;/select&gt;
+             &lt;select id="scharfmild" class="auswahl select"&gt;
+                 &lt;option value="hide"&gt;Schärfe&lt;/option&gt;
+                 &lt;option value="mild"&gt;mild&lt;/option&gt;
+                 &lt;option value="scharf"&gt;scharf&lt;/option&gt;
+             &lt;/select&gt;
+         &lt;/section&gt;
+     &lt;/div&gt;
+     &lt;button id="btn-choice" class="btn btn-default" type="button"&gt;Anzeigen&lt;/button&gt;
+      &lt;/div&gt;
                     </code>
-                </pre>
+                    </pre>
 
                     <p>Und hier das javascript dazu.</p>
                     <pre>
@@ -153,9 +153,75 @@
                         </code>
                     
                     </pre>
-
-
-
+                    
+                    <h2 class="post-title">Fotos und GIF's</h2>
+                    <p>
+                    Die Fotos wurden responsive mit Bootstrap und mit HTML eingebaut:
+                    </p>         
+                    <pre>
+                    <code class="language-html">
+    &lt;a href="img/post_1.jpg" data-lightbox="a"&gt;
+        &lt;img class="img-responsive" srcset="img/post_1.jpg 1x,img/post_1@2x.jpg 2x, img/post_1@3x.jpg 3x" src="img/post_1.jpg" alt="bild1"&gt;
+     &lt;/a&gt;
+                    </code>
+                    </pre>
+                    <pre>
+                    <code class="language-html">
+    &lt;picture&gt;
+        &lt;source media="(min-width: 960px)" srcset="img/post_2.jpg"&gt;
+        &lt;source media="(min-width: 768px)" srcset="img/post_2_mittel.jpg"&gt;
+        &lt;source media="(min-width: 320px)" srcset="img/post_2_klein.jpg"&gt;
+        &lt;img class="img-responsive" src="img/post_2.jpg" alt="en guete"&gt;
+    &lt;/picture&gt;
+                    </code>
+                    </pre>
+                    <pre>
+                    <code class="language-html">
+    &lt;img srcset="img/more_taste320.jpg 320w, img/more_taste768.jpg 768w, img/more_taste960.jpg 960w"
+    sizes="(max-width: 320px) 100vw, (max-width: 960px) 75vw, 768px"
+    src="img/more_taste960.jpg"
+    alt="marroko markt"&gt;
+                    </code>
+                    </pre>
+                    <p>Damit die GIF's auf click abspielen:</p>
+                    <pre>
+                    <code class="language-html">
+    &lt;img src="img/Tajine_gif2_static.jpg" onclick="this.src ='img/Tajine_gif2_looponce.gif'"/&gt;
+                    </code>
+                    </pre>
+                    
+                    <h2 class="post-title">Styling</h2>
+                    <p>Sobald die Grundfunktionen für die Website standen, ging es an das Styling. Das Theme 'clean-blog' gab schon viel vor, das 'select' und die 'checkboxen' zum Beispiel waren nicht dabei, also wurden diese mithilfe von '<a href="http://codepen.io/">codepen</a>'-styles an das Theme angepasst:</p>
+                    <p data-height="266" data-theme-id="dark" data-slug-hash="ctsCz" data-default-tab="css,result" data-user="wallaceerick" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/wallaceerick/pen/ctsCz/">Custom Select Menu</a> by Wallace Erick (<a href="http://codepen.io/wallaceerick">@wallaceerick</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    <p data-height="266" data-theme-id="dark" data-slug-hash="BiHzp" data-default-tab="css,result" data-user="CreativeJuiz" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/CreativeJuiz/pen/BiHzp/">Custom checkboxes with CSS only</a> by Geoffrey Crofte (<a href="http://codepen.io/CreativeJuiz">@CreativeJuiz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    
+                    <h2 class="post-title">To-the-top Button</h2>
+                    <p>Der Button um vom unteren Seitenende direkt wieder an den Anfang zu kommen wurde mithilfe von diesem <a href="http://html-tuts.com/back-to-top-button-jquery/">Tutorial</a> gemacht.</p>
+                    <pre>
+                    <code class="language-javascript">
+/* script für to-the-top-button */
+var amountScrolled = 2000;
+$(window).scroll(function () {
+    if ($(window).scrollTop() &gt; amountScrolled) {
+        $('#top-btn').fadeIn();
+    } else {
+    $('#top-btn').fadeOut();
+    }
+});
+                    </code></pre>
+                    
+                    <h2 class="post-title">Plugins</h2>
+                    <p>Wir haben das '<a href="http://osvaldas.info/image-lightbox-responsive-touch-friendly" target="_blank">lightbox</a>'-Plugin verwendet. Leider funktioniert das nicht mit dem &lt;picture&gt;-tag</p>
+                    <pre>
+                    <code class="language-javascript">
+    /* lightbox aktivierung */
+    $('a[data-lightbox="a"]').imageLightbox();
+                    </code>
+                    </pre>
+                    <p>Um den Code in der Dokumentation übersichtlich darzustellen verwendeten wir das '<a href="http://prismjs.com/">prism</a>'-plugin</p>
+                    
                 </div>
             </div>
         </div>

@@ -102,7 +102,8 @@ $(document).ready(function () {
     });
 
     /* script für to-the-top-button */
-
+    
+    /* lightbox aktivierung */
     $('a[data-lightbox="a"]').imageLightbox();
 
 });
